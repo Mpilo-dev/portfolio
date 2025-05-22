@@ -1,7 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
+import cvFile from "../assets/dummy.pdf";
 
-const Button = styled.button`
+const Button = styled.a`
   outline: none;
   border: none;
   text-decoration: none;
@@ -14,7 +15,6 @@ const Button = styled.button`
   text-align: center;
   border-radius: 0.75rem;
 
-  /* Hover effect */
   &:hover {
     background-color: darkgray;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
@@ -29,9 +29,13 @@ const Button = styled.button`
 
 const DownloadButton = () => {
   return (
-    <>
-      <Button>Download CV</Button>
-    </>
+    <Button
+      href={cvFile}
+      download="dummy.pdf"
+      onClick={(e) => e.stopPropagation()}
+    >
+      Download CV
+    </Button>
   );
 };
 
