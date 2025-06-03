@@ -1,5 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 const SkewedButton = styled.button`
   outline: none;
@@ -25,11 +26,11 @@ const SkewedButton = styled.button`
   }
 `;
 
-const OmmiButton = ({ text }) => {
+const OmmiButton = ({ text, to }) => {
   return (
-    <>
+    <Link to={to} style={{ textDecoration: "none" }}>
       <SkewedButton>{text}</SkewedButton>
-    </>
+    </Link>
   );
 };
 

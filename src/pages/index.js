@@ -6,11 +6,12 @@ import { breakpoints } from "../styles/breakpoints";
 import Header from "../components/Header";
 import OmmiButton from "../elements/OmniButton";
 
-import Snepe from "../images/snepe.png";
+import MyImage from "../images/my-image.png";
 import FullName from "../images/mpilo-ndlovu.png";
-import Question from "../images/question.png";
+import TeamMpilo from "../images/team-mpilo.png";
+import group7 from "../images/Group 7 (1).png";
 
-const AppContainer = styled.div`
+export const AppContainer = styled.div`
   width: 100%;
   height: 100vh;
 
@@ -18,7 +19,7 @@ const AppContainer = styled.div`
   flex-direction: column;
 `;
 
-const HeaderContainer = styled.div`
+export const HeaderContainer = styled.div`
   width: 100%;
   height: 15%;
   padding: 0 4.5rem;
@@ -33,7 +34,7 @@ const HeaderContainer = styled.div`
   }
 `;
 
-const ContentContainer = styled.div`
+export const ContentContainer = styled.div`
   width: 100%;
   height: 85%;
   background: var(--white);
@@ -102,7 +103,7 @@ const QuestionImage = styled.div`
   border-radius: 50%;
   border: 1px solid var(--black);
   background: var(--white-primary);
-  padding: 1.2rem;
+  padding: 0.5rem;
 
   position: absolute;
   top: 50%;
@@ -112,6 +113,12 @@ const QuestionImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 `;
 
 const TextImage = styled.img`
@@ -148,6 +155,7 @@ const AboutContainer = styled.div`
     height: auto;
 
     border-top-left-radius: 0;
+    padding: 2.5rem 4rem;
   }
 `;
 
@@ -168,18 +176,18 @@ const IndexPage = () => {
         <ContentContainer>
           <ProfileContainer>
             <ImageContainer>
-              <Image src={Snepe} alt="Yenzo" />
+              <Image src={MyImage} alt="Mpilo Ndlovu" />
             </ImageContainer>
 
             <DetailsContainer>
               <QuestionImage>
-                <Image src={Question} alt="Question Mark" />
+                <Image src={TeamMpilo} alt="Team Mpilo logo" />
               </QuestionImage>
               <TextImage src={FullName} alt="Mpilo Ndlovu" />
               <Role>Junior fullstack developer</Role>
               <Text>Football coach</Text>
               <ButtonContainer>
-                <OmmiButton text="Projects" />
+                <OmmiButton text="Projects" to="/projects" />
                 <OmmiButton text="Contact" />
               </ButtonContainer>
             </DetailsContainer>
@@ -226,4 +234,9 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => (
+  <>
+    <title>Home Page</title>
+    <link rel="icon" type="image/png" href={group7} />
+  </>
+);
