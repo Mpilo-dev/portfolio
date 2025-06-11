@@ -269,8 +269,23 @@ const Text = styled.div`
   white-space: ${(props) => (props.nowrap ? "nowrap" : "normal")};
 `;
 
+const LoadingText = styled(Text)`
+  height: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+
+  @media (max-width: ${breakpoints.tabletSM}px) {
+    min-height: 200px;
+  }
+`;
+
 const ProjectsPage = () => {
-  const [selectedIdx, setSelectedIdx] = React.useState(0);
+  const [selectedIdx, setSelectedIdx] = React.useState(null);
+  const [isLoading, setIsLoading] = React.useState(true);
 
   const handleBackClick = () => {
     navigate("/");
@@ -278,6 +293,7 @@ const ProjectsPage = () => {
 
   const handleCardClick = (index) => {
     setSelectedIdx(index);
+    setIsLoading(false);
     // Update URL based on selected project
     const projectSlug = index === 0 ? "khumbula" : "marryme";
     navigate(`/projects?project=${projectSlug}`, { replace: true });
@@ -290,8 +306,10 @@ const ProjectsPage = () => {
       const project = params.get("project");
       if (project === "khumbula") {
         setSelectedIdx(0);
+        setIsLoading(false);
       } else if (project === "marryme") {
         setSelectedIdx(1);
+        setIsLoading(false);
       }
     }
   }, []);
@@ -336,55 +354,67 @@ const ProjectsPage = () => {
             </CardsWrapper>
           </CardsContainer>
           <DetailsContainer>
-            <DetailsHeader>
-              <MatchPreview>
-                <img
-                  src="https://c.animaapp.com/52VaV51L/img/rectangle-14.png"
-                  alt="Stadium"
-                  style={{ width: "100%", height: "65%", objectFit: "cover" }}
-                />
-                <TeamBadge color="#1c4638" left="120px" isLeft={true}>
-                  <img
-                    src="https://c.animaapp.com/52VaV51L/img/group-7.png"
-                    alt="Mamelodi Sundowns"
-                  />
-                </TeamBadge>
-                <TeamBadge
-                  color={selectedIdx === 0 ? "#F8D448" : "#916AE3"}
-                  left="calc(100% - 300px)"
-                  isLeft={false}
-                >
-                  <img
-                    src={
-                      selectedIdx === 0
-                        ? "https://c.animaapp.com/52VaV51L/img/thumbnail-1-1@1.5x.png"
-                        : MarryME
-                    }
-                    alt={selectedIdx === 0 ? "Khumbula" : "Marry Me"}
-                  />
-                </TeamBadge>
-                <VSBox>
-                  <Text color="#fff">VS</Text>
-                </VSBox>
-                <LaunchButton
-                  bgColor={selectedIdx === 0 ? "#F8D448" : "#916AE3"}
-                />
-              </MatchPreview>
-            </DetailsHeader>
-            <DetailsBody>
-              <DetailsContent>
-                <DetailsCard
-                  title={projectData[selectedIdx].title}
-                  details={projectData[selectedIdx].details}
-                />
-              </DetailsContent>
-              <Tools>
-                <ToolsHighlights
-                  tools={projectData[selectedIdx].tools}
-                  screenshots={projectData[selectedIdx].screenshots}
-                />
-              </Tools>
-            </DetailsBody>
+            {isLoading ? (
+              <LoadingText size="1.5rem" weight="500" color="#204034">
+                Please select a project to view details
+              </LoadingText>
+            ) : (
+              <>
+                <DetailsHeader>
+                  <MatchPreview>
+                    <img
+                      src="https://c.animaapp.com/52VaV51L/img/rectangle-14.png"
+                      alt="Stadium"
+                      style={{
+                        width: "100%",
+                        height: "65%",
+                        objectFit: "cover",
+                      }}
+                    />
+                    <TeamBadge color="#1c4638" left="120px" isLeft={true}>
+                      <img
+                        src="https://c.animaapp.com/52VaV51L/img/group-7.png"
+                        alt="Mamelodi Sundowns"
+                      />
+                    </TeamBadge>
+                    <TeamBadge
+                      color={selectedIdx === 0 ? "#F8D448" : "#916AE3"}
+                      left="calc(100% - 300px)"
+                      isLeft={false}
+                    >
+                      <img
+                        src={
+                          selectedIdx === 0
+                            ? "https://c.animaapp.com/52VaV51L/img/thumbnail-1-1@1.5x.png"
+                            : MarryME
+                        }
+                        alt={selectedIdx === 0 ? "Khumbula" : "Marry Me"}
+                      />
+                    </TeamBadge>
+                    <VSBox>
+                      <Text color="#fff">VS</Text>
+                    </VSBox>
+                    <LaunchButton
+                      bgColor={selectedIdx === 0 ? "#F8D448" : "#916AE3"}
+                    />
+                  </MatchPreview>
+                </DetailsHeader>
+                <DetailsBody>
+                  <DetailsContent>
+                    <DetailsCard
+                      title={projectData[selectedIdx].title}
+                      details={projectData[selectedIdx].details}
+                    />
+                  </DetailsContent>
+                  <Tools>
+                    <ToolsHighlights
+                      tools={projectData[selectedIdx].tools}
+                      screenshots={projectData[selectedIdx].screenshots}
+                    />
+                  </Tools>
+                </DetailsBody>
+              </>
+            )}
           </DetailsContainer>
         </ContentContainer>
       </AppContainer>

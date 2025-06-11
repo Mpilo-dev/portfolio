@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import cvFile from "../assets/mpilo_ndlovu_cv.pdf";
+import { breakpoints } from "../styles/breakpoints";
 
 const Button = styled.a`
   outline: none;
@@ -25,6 +26,11 @@ const Button = styled.a`
     transform: scale(1.2);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   }
+  /* 
+  @media (max-width: ${breakpoints.tabletSM}px) {
+    font-size: 0.6rem;
+    padding: 0.25rem 1rem;
+  } */
 `;
 
 const DownloadButton = () => {
