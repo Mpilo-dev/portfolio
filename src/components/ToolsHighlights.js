@@ -10,6 +10,8 @@ const Table = styled.table`
   overflow: hidden;
   border-collapse: collapse;
   box-shadow: 0 2px 8px #f0f0f0;
+  margin-bottom: 1.5rem;
+  min-height: 300px;
 `;
 
 const TabRow = styled.tr``;
@@ -18,15 +20,16 @@ const Th = styled.th`
   background: ${({ active }) => (active ? "#fffde7" : "#f6f8f6")};
   color: #204034;
   font-weight: 600;
-  padding: 0.8rem 1rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   font-size: 1.05rem;
   cursor: pointer;
   border-bottom: 2px solid #eee;
+  width: 50%;
 `;
 
 const Td = styled.td`
-  padding: 0.7rem 1rem;
+  padding: 1rem 1.5rem;
   border-bottom: 1px solid #f0f0f0;
   color: #204034;
   background: ${({ highlight }) => (highlight ? "#f6f8f6" : "#fff")};
@@ -46,6 +49,7 @@ const ScreenshotsContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   height: auto;
+  min-height: 200px;
 `;
 
 const ScreenshotImage = styled.img`
@@ -74,6 +78,7 @@ const Screenshot = styled.div`
   justify-content: center;
   color: #aaa;
   font-size: 0.9rem;
+  min-height: 200px;
 `;
 
 const ToolsHighlights = ({ tools, screenshots = [] }) => {
