@@ -60,6 +60,7 @@ const CardsContainer = styled.div`
 
   @media (max-width: ${breakpoints.mobileLG}px) {
     display: ${(props) => (props.$isCardSelected ? "none" : "flex")};
+    background-color: inherit;
   }
 `;
 
@@ -253,6 +254,15 @@ const TeamBadge = styled(FlexColumn).attrs({
     top: 50%;
   }
 
+  @media (max-width: ${breakpoints.mobileSM}px) {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    left: ${(props) =>
+      props.$isLeft ? "calc(50% - 140px)" : "calc(50% + 40px)"};
+    top: 65%;
+  }
+
   img {
     width: 140px;
     height: 140px;
@@ -260,6 +270,11 @@ const TeamBadge = styled(FlexColumn).attrs({
     @media (max-width: ${breakpoints.mobileLG}px) {
       width: 100px;
       height: 100px;
+    }
+
+    @media (max-width: ${breakpoints.mobileSM}px) {
+      width: 80px;
+      height: 80px;
     }
   }
 `;
