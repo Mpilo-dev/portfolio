@@ -157,6 +157,10 @@ const AboutContainer = styled.div`
     border-top-left-radius: 0;
     padding: 2.5rem 4rem;
   }
+
+  @media (max-width: ${breakpoints.mobileLG}px) {
+    padding: 2.5rem 2.65rem;
+  }
 `;
 
 const AboutText = styled.p`
