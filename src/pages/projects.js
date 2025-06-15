@@ -222,7 +222,7 @@ const ImageOverlay = styled.div`
   width: 100%;
   height: 65%;
   background-color: #1c4638;
-  opacity: 0.5;
+  opacity: 0.9;
   z-index: 1;
 `;
 
@@ -319,6 +319,13 @@ const LoadingText = styled(Text)`
   }
 `;
 
+const Title = styled.div`
+  padding: 0.25rem 1.3rem;
+  font-size: small;
+  background: var(--green);
+  color: var(--white);
+`;
+
 const ProjectsPage = () => {
   const [selectedIdx, setSelectedIdx] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(true);
@@ -373,7 +380,8 @@ const ProjectsPage = () => {
           <CardsContainer $isCardSelected={selectedIdx !== null && isMobileLG}>
             <ButtonWrapper>
               <ButtonContainer>
-                <OmmiButton text="My Projects" />
+                {/* <OmmiButton text="My Projects" /> */}
+                <Title>My Projects</Title>
               </ButtonContainer>
               <BackButton onClick={handleBackClick}>
                 <IoIosArrowBack />
@@ -421,7 +429,7 @@ const ProjectsPage = () => {
                     }}
                   >
                     <IoIosArrowBack />
-                    Back to Projects
+                    Back
                   </BackButton>
                   <MatchPreview>
                     <img
@@ -471,6 +479,7 @@ const ProjectsPage = () => {
                     <ToolsHighlights
                       tools={selectedProject.tools}
                       screenshots={selectedProject.screenshots}
+                      projectColor={selectedIdx === 0 ? "#F8D448" : "#916AE3"}
                     />
                   </Tools>
                 </DetailsBody>

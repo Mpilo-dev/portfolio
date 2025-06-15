@@ -37,7 +37,7 @@ const Td = styled.td`
 `;
 
 const Highlight = styled.span`
-  color: #f7c948;
+  color: ${(props) => props.$projectColor || "#f7c948"};
   font-weight: 500;
 `;
 
@@ -81,7 +81,7 @@ const Screenshot = styled.div`
   min-height: 200px;
 `;
 
-const ToolsHighlights = ({ tools, screenshots = [] }) => {
+const ToolsHighlights = ({ tools, screenshots = [], projectColor }) => {
   const [activeTab, setActiveTab] = useState("tools");
 
   return (
@@ -108,7 +108,9 @@ const ToolsHighlights = ({ tools, screenshots = [] }) => {
             <tr key={idx}>
               <Td>{row.tool}</Td>
               <Td>
-                <Highlight>{row.highlight}</Highlight>
+                <Highlight $projectColor={projectColor}>
+                  {row.highlight}
+                </Highlight>
               </Td>
             </tr>
           ))
