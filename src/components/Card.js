@@ -59,14 +59,16 @@ const Logo = styled.img`
 `;
 
 const TeamName = styled.div`
-  font-size: 0.65rem;
+  font-size: 0.75rem;
+  font-weight: bold;
   color: #fff;
   text-align: center;
   margin-top: 1rem;
 `;
 
 const AppName = styled.div`
-  font-size: 0.65rem;
+  font-size: 0.75rem;
+  font-weight: bold;
   color: #fff;
   text-align: center;
   margin-top: 1rem;
