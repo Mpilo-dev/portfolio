@@ -10,7 +10,7 @@ const SkewedButton = styled.button`
   background: var(--green);
   color: var(--white);
   font-size: smaller;
-  padding: 0.35rem 1.5rem;
+  padding: 0.15rem 1.25rem;
   text-align: center;
   cursor: pointer;
   transform: skewX(-30deg);
