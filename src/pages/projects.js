@@ -11,7 +11,7 @@ import { AppContainer } from "./index";
 import { IoIosArrowBack } from "react-icons/io";
 import khumbula from "../images/k.png";
 import TeamMpilo from "../images/team_mpilo.png";
-import MarryME from "../images/Group 14.png";
+import MarryME from "../images/new_logo.png";
 import group7 from "../images/Group 7 (1).png";
 import Card from "../components/Card";
 import DetailsCard from "../components/DetailsCard";
@@ -91,7 +91,6 @@ const BackButton = styled.div`
   cursor: pointer;
   margin-bottom: 1rem;
   font-weight: 500;
-  /* background-color: red; */
   margin-left: 1.25rem;
 
   &:hover {
