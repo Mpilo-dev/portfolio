@@ -58,6 +58,9 @@ const ProfileContainer = styled.div`
   @media (max-width: ${breakpoints.tabletSM}px) {
     width: 100%;
   }
+  @media (max-width: ${breakpoints.mobileSM}px) {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -138,8 +141,8 @@ const ButtonContainer = styled.div`
   display: flex;
   gap: 2rem;
 
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 `;
 
 const AboutContainer = styled.div`
