@@ -1,13 +1,16 @@
 import * as React from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
-// import { breakpoints } from "../styles/breakpoints"; // Not needed anymore
+import { breakpoints } from "../styles/breakpoints";
+import Header from "../components/Header";
 import OmmiButton from "../elements/OmniButton";
 import MpiloCard from "../images/mpilo-card.jpg"; // Import the new image
+import { AppContainer } from "./index";
+import { HeaderContainer } from "./projects";
 
-const ContactContainer = styled.div`
+const ContentContainer = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,12 +43,17 @@ const BackButtonContainer = styled.div`
 const ContactPage = () => {
   return (
     <Layout>
-      <ContactContainer>
-        <BackButtonContainer>
-          <OmmiButton text="Back" to="/" />
-        </BackButtonContainer>
-        <CardImage src={MpiloCard} alt="Mpilo Ndlovu Contact Card" />
-      </ContactContainer>
+      <AppContainer>
+        <HeaderContainer>
+          <Header />
+        </HeaderContainer>
+        <ContentContainer>
+          <BackButtonContainer>
+            <OmmiButton text="Back" to="/" />
+          </BackButtonContainer>
+          <CardImage src={MpiloCard} alt="Mpilo Ndlovu Contact Card" />
+        </ContentContainer>
+      </AppContainer>
     </Layout>
   );
 };

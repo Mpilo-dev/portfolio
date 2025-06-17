@@ -59,7 +59,9 @@ const ProfileContainer = styled.div`
     width: 100%;
   }
   @media (max-width: ${breakpoints.mobileSM}px) {
-    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    /* background-color: red; */
   }
 `;
 
