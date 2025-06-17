@@ -91,6 +91,8 @@ const BackButton = styled.div`
   cursor: pointer;
   margin-bottom: 1rem;
   font-weight: 500;
+  /* background-color: red; */
+  margin-left: 1.25rem;
 
   &:hover {
     opacity: 0.8;
@@ -380,7 +382,6 @@ const ProjectsPage = () => {
           <CardsContainer $isCardSelected={selectedIdx !== null && isMobileLG}>
             <ButtonWrapper>
               <ButtonContainer>
-                {/* <OmmiButton text="My Projects" /> */}
                 <Title>My Projects</Title>
               </ButtonContainer>
               <BackButton onClick={handleBackClick}>

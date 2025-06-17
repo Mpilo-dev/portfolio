@@ -6,7 +6,8 @@ import { breakpoints } from "../styles/breakpoints";
 import Header from "../components/Header";
 import OmmiButton from "../elements/OmniButton";
 
-import MyImage from "../images/my-image.png";
+// import MyImage from "../images/my-image.png";
+import MyImage from "../images/mpilo-image.png";
 import FullName from "../images/mpilo-ndlovu.png";
 import TeamMpilo from "../images/team-mpilo.png";
 import group7 from "../images/Group 7 (1).png";
@@ -61,7 +62,7 @@ const ProfileContainer = styled.div`
 
 const ImageContainer = styled.div`
   width: 100%;
-  height: 50%;
+  height: 70%;
 
   display: flex;
   justify-content: center;
@@ -77,7 +78,7 @@ const Image = styled.img`
 
 const DetailsContainer = styled.div`
   width: 100%;
-  height: 50%;
+  height: 30%;
   border-top: 1px solid var(--black);
 
   display: flex;
@@ -91,8 +92,20 @@ const DetailsContainer = styled.div`
   }
 `;
 
+const TextImage = styled.img`
+  margin-top: 3rem;
+`;
+
+const Role = styled.div`
+  margin-top: 0.1rem;
+  padding: 0.25rem 1.3rem;
+  font-size: small;
+  background: var(--green);
+  color: var(--white);
+`;
+
 const Text = styled.p`
-  margin-top: 0.5rem;
+  margin-top: 0.1rem;
   color: var(--green);
   font-size: smaller;
 `;
@@ -106,7 +119,7 @@ const QuestionImage = styled.div`
   padding: 0.5rem;
 
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -121,23 +134,12 @@ const QuestionImage = styled.div`
   }
 `;
 
-const TextImage = styled.img`
-  margin-top: 3.5rem;
-`;
-
-const Role = styled.div`
-  margin-top: 1rem;
-  padding: 0.25rem 1.3rem;
-  font-size: small;
-  background: var(--green);
-  color: var(--white);
-`;
-
 const ButtonContainer = styled.div`
   display: flex;
   gap: 2rem;
 
-  margin-top: 2.5rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
 `;
 
 const AboutContainer = styled.div`
@@ -192,7 +194,7 @@ const IndexPage = () => {
               <Text>Football coach</Text>
               <ButtonContainer>
                 <OmmiButton text="Projects" to="/projects" />
-                <OmmiButton text="Contact" />
+                <OmmiButton text="Contact" to="/contact" />
               </ButtonContainer>
             </DetailsContainer>
           </ProfileContainer>
@@ -240,7 +242,7 @@ export default IndexPage;
 
 export const Head = () => (
   <>
-    <title>Home Page</title>
+    <title>Official Portfolio Site</title>
     <link rel="icon" type="image/png" href={group7} />
   </>
 );
