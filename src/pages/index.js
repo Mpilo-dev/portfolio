@@ -6,7 +6,6 @@ import { breakpoints } from "../styles/breakpoints";
 import Header from "../components/Header";
 import OmmiButton from "../elements/OmniButton";
 
-// import MyImage from "../images/my-image.png";
 import MyImage from "../images/mpilo-image.png";
 import FullName from "../images/mpilo-ndlovu.png";
 import TeamMpilo from "../images/team-mpilo.png";
@@ -58,16 +57,11 @@ const ProfileContainer = styled.div`
   @media (max-width: ${breakpoints.tabletSM}px) {
     width: 100%;
   }
-  @media (max-width: ${breakpoints.mobileSM}px) {
-    margin-top: 0.5rem;
-    margin-bottom: 0.75rem;
-    /* background-color: red; */
-  }
 `;
 
 const ImageContainer = styled.div`
   width: 100%;
-  height: 70%;
+  height: 50%;
 
   display: flex;
   justify-content: center;
@@ -98,11 +92,11 @@ const DetailsContainer = styled.div`
 `;
 
 const TextImage = styled.img`
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 `;
 
 const Role = styled.div`
-  margin-top: 0.1rem;
+  margin-top: 1rem;
   padding: 0.25rem 1.3rem;
   font-size: small;
   background: var(--green);
@@ -110,7 +104,7 @@ const Role = styled.div`
 `;
 
 const Text = styled.p`
-  margin-top: 0.1rem;
+  margin-top: 0.5rem;
   color: var(--green);
   font-size: smaller;
 `;
@@ -124,7 +118,7 @@ const QuestionImage = styled.div`
   padding: 0.5rem;
 
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -143,8 +137,7 @@ const ButtonContainer = styled.div`
   display: flex;
   gap: 2rem;
 
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: 2.5rem;
 `;
 
 const AboutContainer = styled.div`
