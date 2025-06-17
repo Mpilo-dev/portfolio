@@ -4,8 +4,7 @@ import styled from "styled-components";
 const Table = styled.table`
   width: 100%;
   margin-top: 1.5rem;
-  background: ${({ activeTab }) =>
-    activeTab === "highlights" ? "#fff" : "#f6f8f6"};
+  background: #fff;
   border-radius: 0.5rem;
   overflow: hidden;
   border-collapse: collapse;
@@ -17,7 +16,8 @@ const Table = styled.table`
 const TabRow = styled.tr``;
 
 const Th = styled.th`
-  background: ${({ active }) => (active ? "#fffde7" : "#f6f8f6")};
+  background: ${({ active, projectColor }) =>
+    active ? `${projectColor}15` : "#f6f8f6"};
   color: #204034;
   font-weight: 600;
   padding: 1rem 1.5rem;
@@ -26,6 +26,11 @@ const Th = styled.th`
   cursor: pointer;
   border-bottom: 2px solid #eee;
   width: 50%;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: ${({ projectColor }) => `${projectColor}10`};
+  }
 `;
 
 const Td = styled.td`
@@ -91,12 +96,14 @@ const ToolsHighlights = ({ tools, screenshots = [], projectColor }) => {
           <Th
             active={activeTab === "tools"}
             onClick={() => setActiveTab("tools")}
+            projectColor={projectColor}
           >
             Tools used
           </Th>
           <Th
             active={activeTab === "highlights"}
             onClick={() => setActiveTab("highlights")}
+            projectColor={projectColor}
           >
             Highlights
           </Th>
