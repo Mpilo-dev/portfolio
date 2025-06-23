@@ -1,10 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
+import { useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { breakpoints } from "../styles/breakpoints";
 import Header from "../components/Header";
 import OmmiButton from "../elements/OmniButton";
 import MpiloCard from "../images/mpilo-card.jpg"; // Import the new image
+import group7 from "../images/Group 7 (1).png";
 import { AppContainer } from "./index";
 import { HeaderContainer } from "./projects";
 
@@ -60,8 +62,54 @@ const ContactPage = () => {
 
 export default ContactPage;
 
-export const Head = () => (
-  <>
-    <title>Contact - Mpilo Ndlovu</title>
-  </>
-);
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          siteUrl
+        }
+      }
+    }
+  `);
+
+  const { title, description, siteUrl } = data.site.siteMetadata;
+
+  return (
+    <>
+      <title>Contact - {title}</title>
+      <meta
+        name="description"
+        content="Get in touch with Mpilo Ndlovu. Contact information and business card for collaboration opportunities."
+      />
+      <link rel="icon" type="image/png" href={group7} />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={`${siteUrl}/contact`} />
+      <meta property="og:title" content={`Contact - ${title}`} />
+      <meta
+        property="og:description"
+        content="Get in touch with Mpilo Ndlovu. Contact information and business card for collaboration opportunities."
+      />
+      <meta property="og:image" content={`${siteUrl}/images/team-mpilo.png`} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+
+      {/* Twitter */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={`${siteUrl}/contact`} />
+      <meta property="twitter:title" content={`Contact - ${title}`} />
+      <meta
+        property="twitter:description"
+        content="Get in touch with Mpilo Ndlovu. Contact information and business card for collaboration opportunities."
+      />
+      <meta
+        property="twitter:image"
+        content={`${siteUrl}/images/team-mpilo.png`}
+      />
+    </>
+  );
+};
