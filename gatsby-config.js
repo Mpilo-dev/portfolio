@@ -8,7 +8,6 @@ module.exports = {
     description: `Mpilo Ndlovu is a software developer and licensed football coach with a Caf D license. Explore my portfolio showcasing innovative technology solutions.`,
     author: `Mpilo Ndlovu`,
     siteUrl: `https://mpilo-ndlovu.site`,
-    icon: `/src/images/app-logo.png`,
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -23,12 +22,6 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        icon: `src/images/app-logo.png`,
-      },
     },
   ],
 };
