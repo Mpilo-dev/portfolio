@@ -15,7 +15,6 @@ import group7 from "../images/Group 7 (1).png";
 export const AppContainer = styled.div`
   width: 100%;
   height: 100vh;
-
   display: flex;
   flex-direction: column;
 `;
@@ -190,7 +189,7 @@ const IndexPage = () => {
               </QuestionImage>
               <TextImage src={FullName} alt="Mpilo Ndlovu" />
               <Role>Junior fullstack developer</Role>
-              <Text>Football coach</Text>
+              <Text>/Football coach</Text>
               <ButtonContainer>
                 <OmmiButton text="Projects" to="/projects" />
                 <OmmiButton text="Contact" to="/contact" />
