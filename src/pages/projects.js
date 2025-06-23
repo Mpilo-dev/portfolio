@@ -12,7 +12,6 @@ import { IoIosArrowBack } from "react-icons/io";
 import khumbula from "../images/k.png";
 import TeamMpilo from "../images/team_mpilo.png";
 import MarryME from "../images/new_logo.png";
-import group7 from "../images/Group 7 (1).png";
 import Card from "../components/Card";
 import DetailsCard from "../components/DetailsCard";
 import projectData from "../../data/data";
@@ -520,7 +519,6 @@ export const Head = () => {
         name="description"
         content="Explore my projects including Khumbula App and Marry Me App. View details, tools used, and screenshots of my development work."
       />
-      <link rel="icon" type="image/png" href={group7} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
@@ -531,8 +529,8 @@ export const Head = () => {
         content="Explore my projects including Khumbula App and Marry Me App. View details, tools used, and screenshots of my development work."
       />
       <meta property="og:image" content={`${siteUrl}/team-mpilo.png`} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      <meta property="og:image:width" content="1000" />
+      <meta property="og:image:height" content="525" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />

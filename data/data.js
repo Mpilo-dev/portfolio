@@ -26,8 +26,8 @@ const projectData = [
   {
     title: "About khumbula App",
     details: [
-      "Khumbula is designed with a mobile first approach",
-      "Khumbula means to Remember",
+      "Khumbula is designed with a mobile first approach.",
+      "Khumbula means to 'remember' in the IsiZulu language.",
       "Khumbula is a reminder web app designed to help users manage their medication schedules efficiently.",
       "Authentication, including signup, OTP verification, login, password recovery.",
       "Handles user profile management.",
@@ -57,10 +57,10 @@ const projectData = [
   {
     title: "About Marry-ME App",
     details: [
-      "Marry-Me is non-responsive",
+      "Marry-Me is a browser-based app designed for desktop and laptop users, offering a seamless experience on larger screens.",
       "The Marry-Me app is a playful yet functional platform designed to simulate marriage and relationship dynamics in a virtual environment.",
-      "Authentication, Signup and login.",
-      "Management of Person.",
+      "Authentication, signup and login.",
+      "Management of person.",
       "Management of marriage and divorce.",
     ],
     tools: [

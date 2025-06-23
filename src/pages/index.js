@@ -257,7 +257,6 @@ export const Head = () => {
     <>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="icon" type="image/png" href={group7} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
@@ -265,8 +264,8 @@ export const Head = () => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={`${siteUrl}/team-mpilo.png`} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      <meta property="og:image:width" content="1000" />
+      <meta property="og:image:height" content="525" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
