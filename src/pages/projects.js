@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { navigate } from "gatsby";
+import { navigate, useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/Layout";
 
 import Header from "../components/Header";
@@ -498,9 +498,54 @@ const ProjectsPage = () => {
 
 export default ProjectsPage;
 
-export const Head = () => (
-  <>
-    <title>Projects</title>
-    <link rel="icon" type="image/png" href={group7} />
-  </>
-);
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          siteUrl
+        }
+      }
+    }
+  `);
+
+  const { title, description, siteUrl } = data.site.siteMetadata;
+
+  return (
+    <>
+      <title>Projects - {title}</title>
+      <meta
+        name="description"
+        content="Explore my projects including Khumbula App and Marry Me App. View details, tools used, and screenshots of my development work."
+      />
+      <link rel="icon" type="image/png" href={group7} />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={`${siteUrl}/projects`} />
+      <meta property="og:title" content={`Projects - ${title}`} />
+      <meta
+        property="og:description"
+        content="Explore my projects including Khumbula App and Marry Me App. View details, tools used, and screenshots of my development work."
+      />
+      <meta property="og:image" content={`${siteUrl}/images/team-mpilo.png`} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+
+      {/* Twitter */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={`${siteUrl}/projects`} />
+      <meta property="twitter:title" content={`Projects - ${title}`} />
+      <meta
+        property="twitter:description"
+        content="Explore my projects including Khumbula App and Marry Me App. View details, tools used, and screenshots of my development work."
+      />
+      <meta
+        property="twitter:image"
+        content={`${siteUrl}/images/team-mpilo.png`}
+      />
+    </>
+  );
+};
