@@ -6,7 +6,6 @@ import { breakpoints } from "../styles/breakpoints";
 import Header from "../components/Header";
 import OmmiButton from "../elements/OmniButton";
 import MpiloCard from "../images/mpilo-card.jpg"; // Import the new image
-import group7 from "../images/Group 7 (1).png";
 import { AppContainer } from "./index";
 import { HeaderContainer } from "./projects";
 
@@ -84,7 +83,6 @@ export const Head = () => {
         name="description"
         content="Get in touch with Mpilo Ndlovu. Contact information and business card for collaboration opportunities."
       />
-      <link rel="icon" type="image/png" href={group7} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
@@ -95,8 +93,8 @@ export const Head = () => {
         content="Get in touch with Mpilo Ndlovu. Contact information and business card for collaboration opportunities."
       />
       <meta property="og:image" content={`${siteUrl}/team-mpilo.png`} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      <meta property="og:image:width" content="1000" />
+      <meta property="og:image:height" content="525" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
