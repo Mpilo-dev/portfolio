@@ -77,7 +77,7 @@ export const Head = () => {
         property="og:description"
         content="Sorry, the page you're looking for doesn't exist. Please navigate back to the home page."
       />
-      <meta property="og:image" content={`${siteUrl}/images/team-mpilo.png`} />
+      <meta property="og:image" content={`${siteUrl}/team-mpilo.png`} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
 
@@ -89,10 +89,7 @@ export const Head = () => {
         property="twitter:description"
         content="Sorry, the page you're looking for doesn't exist. Please navigate back to the home page."
       />
-      <meta
-        property="twitter:image"
-        content={`${siteUrl}/images/team-mpilo.png`}
-      />
+      <meta property="twitter:image" content={`${siteUrl}/team-mpilo.png`} />
     </>
   );
 };

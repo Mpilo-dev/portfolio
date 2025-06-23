@@ -94,7 +94,7 @@ export const Head = () => {
         property="og:description"
         content="Get in touch with Mpilo Ndlovu. Contact information and business card for collaboration opportunities."
       />
-      <meta property="og:image" content={`${siteUrl}/images/team-mpilo.png`} />
+      <meta property="og:image" content={`${siteUrl}/team-mpilo.png`} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
 
@@ -106,10 +106,7 @@ export const Head = () => {
         property="twitter:description"
         content="Get in touch with Mpilo Ndlovu. Contact information and business card for collaboration opportunities."
       />
-      <meta
-        property="twitter:image"
-        content={`${siteUrl}/images/team-mpilo.png`}
-      />
+      <meta property="twitter:image" content={`${siteUrl}/team-mpilo.png`} />
     </>
   );
 };
