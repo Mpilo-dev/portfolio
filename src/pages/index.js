@@ -198,31 +198,26 @@ const IndexPage = () => {
           </ProfileContainer>
           <AboutContainer>
             <AboutText>
-              I'm a software developer and a licensed coach with a Caf D
-              license. My journey into the world of technology was unique—it all
-              started with my cousin introducing me to the wonders. Since then,
-              I've been on a mission to merge my two passions: technology and
-              soccer.
+              I’m a software developer and a licensed soccer coach (CAF D
+              License) with a unique journey into tech—sparked by my cousin’s
+              introduction to the field. Since then, I’ve been on a mission to
+              merge my two greatest passions: technology and soccer.
             </AboutText>
             <AboutText>
-              I believe in the power of innovation to transform the world of
-              sports. From developing apps to enhance training sessions to
-              creating platforms that connect players and coaches worldwide, I'm
-              constantly exploring new ways to leverage technology in the realm
-              of soccer.
+              I believe in the power of innovation to revolutionize sports.
+              Whether it’s developing apps to optimize training, building
+              platforms to connect players and coaches globally, or exploring
+              data-driven strategies for the game, I’m passionate about
+              leveraging tech to elevate soccer. But my vision doesn’t stop
+              there—I see technology as a catalyst for empowerment, growth, and
+              opportunity in every sphere of life.
             </AboutText>
             <AboutText>
-              But my ambitions extend beyond the soccer field. I see technology
-              as a tool for empowerment and growth in all aspects of life.
-              Whether it's building educational apps for young athletes or
-              designing platforms to facilitate community engagement, I'm driven
-              by a desire to make a meaningful impact through my work.
-            </AboutText>
-            <AboutText>
-              While soccer remains at the heart of my endeavors, my interests in
-              technology are diverse. From AI-driven analytics to virtual
-              reality training simulations, I'm always eager to explore the
-              latest advancements and push the boundaries of what's possible.
+              My foundation in tech was forged at Umuzi, where I honed my skills
+              before diving into internships with Purple Cosmos and BBD through
+              the Umuzi internship program. These experiences sharpened my
+              ability to create impactful solutions while reinforcing my belief
+              in tech as a force for good.
             </AboutText>
             <AboutText>
               Join me on this exciting journey as I continue in the world of
