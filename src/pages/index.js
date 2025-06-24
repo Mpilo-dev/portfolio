@@ -198,10 +198,10 @@ const IndexPage = () => {
           </ProfileContainer>
           <AboutContainer>
             <AboutText>
-              I’m a software developer and a licensed soccer coach (CAF D
+              I’m a software developer and a licensed football coach (CAF D
               License) with a unique journey into tech—sparked by my cousin’s
               introduction to the field. Since then, I’ve been on a mission to
-              merge my two greatest passions: technology and soccer.
+              merge my two greatest passions: football and technology.
             </AboutText>
             <AboutText>
               I believe in the power of innovation to revolutionize sports.
@@ -213,11 +213,12 @@ const IndexPage = () => {
               opportunity in every sphere of life.
             </AboutText>
             <AboutText>
-              My foundation in tech was forged at Umuzi, where I honed my skills
-              before diving into internships with Purple Cosmos and BBD through
-              the Umuzi internship program. These experiences sharpened my
-              ability to create impactful solutions while reinforcing my belief
-              in tech as a force for good.
+              Blending relentless curiosity with formal training, I’ve built my
+              skills through independent learning, complemented by studies at
+              Umuzi and hands-on experience during internships with Purple
+              Cosmos and BBD through the Umuzi internship program . These
+              experiences sharpened my ability to create impactful solutions
+              while reinforcing my belief in tech as a force for good.
             </AboutText>
             <AboutText>
               Join me on this exciting journey as I continue in the world of
