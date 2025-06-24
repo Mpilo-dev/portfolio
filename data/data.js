@@ -12,7 +12,6 @@ import UpdateAlert from "../src/images/khumbula_screenshots/update_alert.png";
 
 import MarryMeRegister from "../src/images/marry_screenshots/registration.png";
 import MarryMeLogin from "../src/images/marry_screenshots/login.png";
-// import Dashboard from "../src/images/marry_screenshots/dashboard.PNG";
 import AddPerson from "../src/images/marry_screenshots/add_person.png";
 import DeletePerson from "../src/images/marry_screenshots/delete_person.png";
 import DashboardPerson from "../src/images/marry_screenshots/dashboard_person.png";
@@ -35,14 +34,19 @@ const projectData = [
       "Management of reminders for medication intake.",
     ],
     tools: [
-      { tool: "Front end", highlight: "React powered by Vite | redux toolkit" },
-      { tool: "Backend", highlight: "Node | ExpressJS server" },
+      {
+        tool: "Front end",
+        highlight: "React powered by Vite|React-hook-form & Yup",
+      },
+      { tool: "State Management", highlight: "Redux toolkit" },
+      { tool: "Backend", highlight: "Nodejs|Express.js|Mongoose|Mongo_DB" },
       { tool: "Styling tool", highlight: "TailwindCSS" },
       { tool: "Version control", highlight: "Git" },
+      { tool: "Cloud", highlight: "AWS" },
     ],
     screenshots: [
-      khumbulaRegister,
       khumbulaLogin,
+      khumbulaRegister,
       ForgotPassword,
       Dashboard,
       SideBar,
@@ -64,14 +68,16 @@ const projectData = [
       "Management of marriage and divorce.",
     ],
     tools: [
-      { tool: "Front end", highlight: "Gatsby.js | redux toolkit" },
-      { tool: "Backend", highlight: "Node | ExpressJS server" },
+      { tool: "Front end", highlight: "Gatsby.js|Formik & Yup" },
+      { tool: "State Management", highlight: "Redux toolkit" },
+      { tool: "Backend", highlight: "Nodejs|Express.js|Mongoose|Mongo_DB" },
       { tool: "Styling tool", highlight: "Styled-components" },
       { tool: "Version control", highlight: "Git" },
+      { tool: "Cloud", highlight: "AWS" },
     ],
     screenshots: [
-      MarryMeRegister,
       MarryMeLogin,
+      MarryMeRegister,
       AddPerson,
       DeletePerson,
       DashboardPerson,
