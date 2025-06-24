@@ -11,6 +11,7 @@ const Table = styled.table`
   box-shadow: 0 2px 8px #f0f0f0;
   margin-bottom: 1.5rem;
   min-height: 300px;
+  table-layout: fixed;
 `;
 
 const TabRow = styled.tr``;
@@ -39,6 +40,7 @@ const Td = styled.td`
   color: #204034;
   background: ${({ highlight }) => (highlight ? "#f6f8f6" : "#fff")};
   font-size: 1rem;
+  word-wrap: break-word;
 `;
 
 const Highlight = styled.span`
