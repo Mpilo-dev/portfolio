@@ -36,13 +36,14 @@ const projectData = [
     tools: [
       {
         tool: "Front end",
-        highlight: "React powered by Vite|React-hook-form & Yup",
+        highlight: "React powered by Vite, React-hook-form & Yup",
       },
-      { tool: "State Management", highlight: "Redux toolkit" },
-      { tool: "Backend", highlight: "Nodejs|Express.js|Mongoose|Mongo_DB" },
       { tool: "Styling tool", highlight: "TailwindCSS" },
-      { tool: "Version control", highlight: "Git" },
-      { tool: "Cloud", highlight: "AWS" },
+      { tool: "State Management", highlight: "Redux toolkit" },
+      { tool: "Backend", highlight: "Node.js & Express.js" },
+      { tool: "Database", highlight: "Mongoose & Mongo_DB" },
+      { tool: "Version control", highlight: "Git & Github" },
+      { tool: "Cloud", highlight: "AWS(EC2, S3, Route 53) Mongo_DB Atlas" },
     ],
     screenshots: [
       khumbulaLogin,
@@ -68,12 +69,13 @@ const projectData = [
       "Management of marriage and divorce.",
     ],
     tools: [
-      { tool: "Front end", highlight: "Gatsby.js|Formik & Yup" },
-      { tool: "State Management", highlight: "Redux toolkit" },
-      { tool: "Backend", highlight: "Nodejs|Express.js|Mongoose|Mongo_DB" },
+      { tool: "Front end", highlight: "Gatsby.js, Formik & Yup" },
       { tool: "Styling tool", highlight: "Styled-components" },
-      { tool: "Version control", highlight: "Git" },
-      { tool: "Cloud", highlight: "AWS" },
+      { tool: "State Management", highlight: "Redux toolkit" },
+      { tool: "Backend", highlight: "ASP.NET Core" },
+      { tool: "Database", highlight: "Entity Framework Core & Postgres" },
+      { tool: "Version control", highlight: "Git & GitHub" },
+      { tool: "Cloud", highlight: "AWS(EC2, S3, Route 53, RDS)" },
     ],
     screenshots: [
       MarryMeLogin,
