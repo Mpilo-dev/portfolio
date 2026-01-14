@@ -1,6 +1,5 @@
 import * as React from "react";
 import styled from "styled-components";
-import cvFile from "../assets/mpilo_ndlovu_cv.pdf";
 import { breakpoints } from "../styles/breakpoints";
 
 const Button = styled.a`
@@ -36,8 +35,8 @@ const Button = styled.a`
 const DownloadButton = () => {
   return (
     <Button
-      href={cvFile}
-      download="mpilo_ndlovu_cv.pdf"
+      href="/ndlovu_mpilo_cv.pdf"
+      download="ndlovu_mpilo_cv.pdf"
       onClick={(e) => e.stopPropagation()}
     >
       Download CV
