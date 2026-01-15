@@ -90,7 +90,7 @@ export const Head = () => {
       <meta property="og:title" content={`Contact - ${title}`} />
       <meta
         property="og:description"
-        content="Get in touch with Mpilo Ndlovu. Contact information and business card for collaboration opportunities."
+        content="Get in touch with Mpilo Ndlovu. Contact information card for collaboration opportunities."
       />
       <meta property="og:image" content={`${siteUrl}/team-mpilo.png`} />
       <meta property="og:image:width" content="1000" />
