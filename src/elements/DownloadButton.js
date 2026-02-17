@@ -35,8 +35,8 @@ const Button = styled.a`
 const DownloadButton = () => {
   return (
     <Button
-      href="/ndlovu_mpilo_cv.pdf"
-      download="ndlovu_mpilo_cv.pdf"
+      href="/mpilo-ndlovu-cv.pdf"
+      download="mpilo-ndlovu-cv.pdf"
       onClick={(e) => e.stopPropagation()}
     >
       Download CV
