@@ -43,7 +43,11 @@ const projectData = [
       { tool: "Backend", highlight: "Node.js & Express.js" },
       { tool: "Database", highlight: "Mongoose & Mongo_DB" },
       { tool: "Version control", highlight: "Git & Github" },
-      { tool: "Cloud", highlight: "AWS(EC2, S3, Route 53) Mongo_DB Atlas" },
+      {
+        tool: "DevOps",
+        highlight:
+          "CI/CD(Github Actions), AWS(EC2, S3, Route 53) Mongo_DB Atlas, Docker",
+      },
     ],
     screenshots: [
       khumbulaLogin,
@@ -75,7 +79,10 @@ const projectData = [
       { tool: "Backend", highlight: "ASP.NET Core" },
       { tool: "Database", highlight: "Entity Framework Core & Postgres" },
       { tool: "Version control", highlight: "Git & GitHub" },
-      { tool: "Cloud", highlight: "AWS(EC2, S3, Route 53, RDS)" },
+      {
+        tool: "DevOps",
+        highlight: "CI/CD(Github Actions), AWS(EC2, S3, Route 53, RDS)",
+      },
     ],
     screenshots: [
       MarryMeLogin,
