@@ -35,7 +35,7 @@ const LaunchButton = styled.button`
 const StyledLaunchButton = ({ bgColor, onClick }) => {
   const handleClick = () => {
     if (bgColor === "#F8D448") {
-      window.open("https://www.khumbula.site", "_blank");
+      window.open("https://www.khumbula.website", "_blank");
     } else if (bgColor === "#916AE3") {
       window.open("https://www.marry-me.online", "_blank");
     }
